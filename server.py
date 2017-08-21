@@ -42,6 +42,22 @@ def goolecheck():
 
 
 
+
+
+@app.route('/generic')
+def generic():
+    return render_template('generic.html')
+
+@app.route('/element')
+def ele():
+    return render_template('elements.html')
+
+
 @app.route('/test')
 def test():
     return 'designed by jack yang,please communicate with yang756260386@gmail.com 233 '
+
+
+
+if __name__ == '__main__':
+    app.run('0.0.0.0',50,debug='True')
